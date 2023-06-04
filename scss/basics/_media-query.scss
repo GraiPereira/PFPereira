@@ -1,0 +1,26 @@
+/* Media Query Mobile */
+
+@media (max-width: 576px)
+{
+    #blog h1 {
+        font-size: 20px;        
+    }
+    #blog h2 {
+        font-size: 18px;
+        padding: 10px 10px 0px 10px;
+        margin: 0px;
+    }
+    p {
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+    }
+    .carousel {
+        width: 10%;
+        height: 50vh;
+        padding: 15px;
+        margin: 15px;
+    }
+    #metodomontessori {
+        flex-wrap: wrap;
+    }
+}

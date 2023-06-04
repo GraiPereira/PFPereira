@@ -1,0 +1,137 @@
+#inicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.introduccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    width: 320;
+    height: 320px;
+    padding: 18px;
+    margin: 15;
+    border-radius: 30px;
+    order: 1;
+}
+#beneficios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    h4 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+        color: $texto-morado;
+        font-weight: bold;
+    }
+    p {
+        font-size: 14px;
+        color: $texto-rosado;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        text-align: left;
+        width: 180;
+        height: 320px;
+        padding: 10px;
+        margin: 0px;
+        border-radius: 30px;
+        order: 1;
+    }
+    .cajabeneficios{ 
+        align-items: baseline;
+        text-align: left; 
+        width: 210px;
+        height: 350px;
+        padding: 18px;
+        margin: 15;
+        background-color: $fondo-amarillo;
+        border-radius: 30px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
+        -webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
+        -moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
+    }
+    .cajabeneficios:hover{
+        transform: translate(50px, 50px);
+    }
+}
+#principiosBasicos {
+    h4{
+        font-size: 20px;
+        color: $texto-rosado;
+        text-align: center;
+        font-weight: bold;
+        padding: 25px 25px 25px;
+        margin-top: 30px;
+    }
+}
+#metodoMontessori {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    .montessori {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: left;
+        width: 210px;
+        height: 350px;
+        padding: 18px;
+        margin: 15;
+        font-size: 14px;
+        color: $texto-blanco;
+        border-radius: 30px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
+        -webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
+        -moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
+    }
+    .montessori:hover{
+        transform: translate(50px, 50px);
+    }
+    .p1 {
+        background-color:$fondo-coral;
+        order: 1;
+    }
+    .p2 {
+        background-color: $fondo-rosado;
+        order: 2;
+        p{
+            text-align: left;
+            padding: 10px;
+            margin: 0;
+            width: 180px;
+        }
+        ul {
+            order: 3;
+        }
+    }
+    .p3{
+        background-color: $fondo-azul;
+        order: 3;
+    }
+    .p4{
+        background-color: $fondo-verde;
+        order: 4;
+    }
+    .p5{
+        background-color: $fondo-azul-cielo;
+        order: 5;
+    }
+}
+
+@media (max-width: 576px)
+{
+    main p {
+        margin: 0;
+    }
+}

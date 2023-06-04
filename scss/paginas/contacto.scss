@@ -1,0 +1,48 @@
+#formulario {
+    padding: 18px;
+    margin: 50px 50px 50px 50px ;
+    p{
+        font-size: 16px;
+        color: $texto-morado;
+        margin: 0px;
+        padding: 0px;
+    }
+    .redes:hover {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .boton {
+        background-color: #afd7ce;
+        color: white;
+        padding: 12px 25px;
+        margin: 5px;
+        border-radius: 8px;
+        border: solid;
+        cursor: pointer;
+    }
+    .boton:hover{
+        background-color: lightpink;
+        font-size: 20px;
+    }
+    .boton:active{
+        background-color: lightskyblue;
+    }
+    ul {
+        color: plum;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .boton:hover{
+        background-color: lightpink;
+        font-size: 14px;
+    }
+    #formulario {
+        padding: 10px;
+        margin: 20px 20px 20px 20px ;
+        p{
+            font-size: 14px;
+        }
+    }
+}

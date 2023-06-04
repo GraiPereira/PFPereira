@@ -1,0 +1,22 @@
+#encabezadoTrabaja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 100px;
+    background-color: $fondo-celeste;
+    img {
+        height: 450px;
+        width: 100%;
+    } 
+}
+@media (max-width: 576px)
+{ 
+   #encabezadoTrabaja{
+        height: 20vh;
+        width: 100%;
+        padding: 90px;
+   }
+}

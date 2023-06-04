@@ -1,0 +1,17 @@
+$fondo-celeste: #afd7ce;
+$fondo-amarillo: lightyellow;
+$fondo-coral: lightcoral;
+$fondo-rosado: #edadd0;
+$fondo-azul: #086788;
+$fondo-verde: lightgreen;
+$fondo-azul-cielo: lightskyblue;
+$texto-rosado: #edadd0;
+$texto-morado: #a686af;
+$texto-blanco: white;
+
+
+@if $fondo-celeste == #afd7ce {
+    $texto-blanco: white;
+}@else {
+    $texto-blanco: black;
+}

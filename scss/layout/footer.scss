@@ -1,0 +1,24 @@
+footer {
+    grid-area: footer;
+    background-color: $fondo-celeste;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+    a {
+        color: $texto-blanco;
+    }
+    p {
+        color: $texto-blanco;
+    }
+}
+@media (max-width: 576px)
+{
+    footer {
+        height: 15vh;
+        width: 100%;
+    }
+}

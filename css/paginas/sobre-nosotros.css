@@ -1,0 +1,12 @@
+.sobre-nosotras {
+  margin: 0px;
+  padding: 100px;
+}
+
+@media (max-width: 576px) {
+  .sobre-nosotras {
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=sobre-nosotros.css.map */
