@@ -1,12 +1,28 @@
-.sobre-nosotras {
-    margin: 0px;
-    padding: 100px;
+#sobre-nosotras {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+    .carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 850px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 90px 35px 90px 35px;
+    }
 }
 
 @media (max-width: 576px)
 { 
-    .sobre-nosotras {
-        padding: 10px;
+    #sobre-nosotras {
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        margin: 15px;
     }
-   
 }

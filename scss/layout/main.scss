@@ -6,13 +6,12 @@
 body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 70px auto auto 80px;
+    grid-template-rows: 70px auto 80px;
     grid-template-areas: 
     "header header header header header header"
-    "nav nav nav nav nav nav"
     "main main main main main main"
     "footer footer footer footer footer footer";
-    row-gap: 5px;
+    row-gap: 15px;
     background-size: cover;
 }
 main {

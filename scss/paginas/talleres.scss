@@ -13,10 +13,11 @@
     }
 }
 #talleres {
-    display: block;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 50px;
     h4 {
         color: $texto-morado;
         text-align: center;
@@ -32,9 +33,9 @@
     }
 }
 .talleres {
-    width: 700px;
+    width: 250px;
     height: auto;
-    margin: 30px;
+    margin: 10px;
     padding: 12px;
     border-radius: 90px 35px 90px 35px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
@@ -44,18 +45,20 @@
 }
 .taller1 {
     background-color: #E8FFB7;
-    margin: 50px 500px;
 }
 .taller2 {
     background-color: #FFC1CF;
-    margin: 50px;
 }
 .carousel {
-    width: 380px;
-    height: 450px;
-    padding: 20px;
-    margin: auto;
-    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 90px 35px 90px 35px;
 }
 
 
@@ -66,8 +69,11 @@
         width: 100%;
         padding: 50;
    }
+   #talleres {
+    flex-wrap: wrap;
+   }
    .carousel {
-    width: 300px;
+    width: 380px;
     height: 400px;
     padding: 25;
     margin: 0;

@@ -25,7 +25,7 @@
 header {
   display: flex;
   flex-direction: row;
-  height: 75px;
+  height: auto;
   width: 100%;
   grid-area: header;
   background-color: #afd7ce;
@@ -44,12 +44,17 @@ header nav {
 
 @media (max-width: 576px) {
   header {
-    height: 10vh;
+    height: auto;
     width: 100%;
   }
   header img {
     width: 11vh;
     height: 10vh;
+  }
+  .container-fluid {
+    display: flex;
+    height: auto;
+    justify-content: center;
   }
 }
 * {
@@ -61,9 +66,9 @@ header nav {
 body {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 70px auto auto 80px;
-  grid-template-areas: "header header header header header header" "nav nav nav nav nav nav" "main main main main main main" "footer footer footer footer footer footer";
-  row-gap: 5px;
+  grid-template-rows: 70px auto 80px;
+  grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+  row-gap: 15px;
   background-size: cover;
 }
 
@@ -136,7 +141,7 @@ footer {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  height: 20vh;
+  height: auto;
   width: 100%;
 }
 footer a {
@@ -146,12 +151,6 @@ footer p {
   color: white;
 }
 
-@media (max-width: 576px) {
-  footer {
-    height: 15vh;
-    width: 100%;
-  }
-}
 #inicio {
   display: flex;
   flex-direction: row;
@@ -176,7 +175,7 @@ footer p {
 #beneficios {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 #beneficios h4 {
@@ -226,6 +225,16 @@ footer p {
   font-weight: bold;
   padding: 25px 25px 25px;
   margin-top: 30px;
+}
+#principiosBasicos div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  width: 750px;
+  height: auto;
+  margin: auto;
 }
 
 #metodoMontessori {
@@ -289,7 +298,20 @@ footer p {
   main p {
     margin: 0;
   }
+  #beneficios {
+    flex-wrap: wrap;
+  }
+  #principiosBasicos div {
+    width: 320px;
+    height: auto;
+  }
 }
+#formulario-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 #formulario {
   padding: 18px;
   margin: 50px 50px 50px 50px;
@@ -405,14 +427,31 @@ footer p {
     flex-wrap: wrap;
   }
 }
-.sobre-nosotras {
-  margin: 0px;
-  padding: 100px;
+#sobre-nosotras {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+}
+#sobre-nosotras .carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  width: 850px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 90px 35px 90px 35px;
 }
 
 @media (max-width: 576px) {
-  .sobre-nosotras {
-    padding: 10px;
+  #sobre-nosotras {
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 15px;
   }
 }
 #testimonios {
@@ -544,10 +583,11 @@ footer p {
 }
 
 #talleres {
-  display: block;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 #talleres h4 {
   color: #a686af;
@@ -564,9 +604,9 @@ footer p {
 }
 
 .talleres {
-  width: 700px;
+  width: 250px;
   height: auto;
-  margin: 30px;
+  margin: 10px;
   padding: 12px;
   border-radius: 90px 35px 90px 35px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.53);
@@ -576,20 +616,22 @@ footer p {
 
 .taller1 {
   background-color: #E8FFB7;
-  margin: 50px 500px;
 }
 
 .taller2 {
   background-color: #FFC1CF;
-  margin: 50px;
 }
 
 .carousel {
-  width: 380px;
-  height: 450px;
-  padding: 20px;
-  margin: auto;
-  bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 90px 35px 90px 35px;
 }
 
 @media (max-width: 576px) {
@@ -598,8 +640,11 @@ footer p {
     width: 100%;
     padding: 50;
   }
+  #talleres {
+    flex-wrap: wrap;
+  }
   .carousel {
-    width: 300px;
+    width: 380px;
     height: 400px;
     padding: 25;
     margin: 0;
