@@ -5,6 +5,7 @@
   height: 700px;
   margin: auto;
 }
+
 #sobre-nosotras .carousel {
   display: flex;
   flex-direction: row;
@@ -24,6 +25,6 @@
     height: auto;
     margin: 15px;
   }
-}
+} 
 
 /*# sourceMappingURL=sobre-nosotros.css.map */

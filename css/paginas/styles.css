@@ -1,0 +1,368 @@
+/* Globales */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    font-family: delius;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 70px auto 80px;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+    row-gap: 15px;
+    background-size: cover;
+}
+main {
+    grid-area: main;
+}
+#encabezadoTalleres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        height: 500px;
+        padding: 50px;
+        background-color: #afd7ce;
+}
+main img {
+            height: 450px;
+            width: 100%;
+        }
+
+h3 {
+    font-size: 30px;
+    color: #a686af;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+h2 {
+    font-size: 20px;
+    color:lightcoral;
+    padding: 0 25px;
+}
+p {
+    color: #a686af;
+    padding: 0 25px;
+}
+
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #afd7ce;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 70%;
+    margin: 50px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    grid-area: header;
+    background-color: #afd7ce;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    nav{
+        grid-area: nav;
+    }
+}
+header img {
+        width: 75px;
+        height: 75px;
+}
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0%;
+    background-color: #afd7ce;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #afd7ce;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hidden{
+    display: none;
+}
+
+#encabezadotalleres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    background-color: #afd7ce;
+}
+#encabezadotalleres img {
+    height: 400px;
+    width: 1200px;
+    object-fit: cover;
+    margin: auto;
+    }
+
+#talleres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    h4 {
+        color: purple;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 16px;
+        text-align: left;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+.talleres {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 90px 35px 90px 35px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
+    -webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
+    -moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
+    
+}
+.taller1 {
+    background-color: #E8FFB7;
+}
+.taller2 {
+    background-color: #FFC1CF;
+}
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 90px 35px 90px 35px;
+}
+footer {
+    grid-area: footer;
+    background-color: #afd7ce;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+footer a {
+        color: white;
+    }
+footer p {
+        color: white;
+    }
+
+@media (max-width: 576px)
+{
+}
+@media (max-width: 576px)
+{ 
+#encabezadoTalleres{
+        height: 20vh;
+        width: 100%;
+        padding: 50;
+}
+#talleres {
+    flex-wrap: wrap;
+}
+.carousel {
+    width: 380px;
+    height: 400px;
+    padding: 25;
+    margin: 0;
+}
+.talleres {
+    width: auto;
+}
+.taller1 {
+    margin: auto;
+}
+.taller2 {
+    margin: 50px auto;
+}
+}

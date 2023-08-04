@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/paginas/sobre-nosotros.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;AACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIJ;EAEI;IACI;IACA;IACA;IACA","file":"sobre-nosotros.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/paginas/sobre-nosotros.css"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;IACE;IACA;IACA;IACA;;EAEH","file":"sobre-nosotros.css"}

@@ -24,7 +24,7 @@ main {
         width: 100%;
         height: 500px;
         padding: 50px;
-        background-color: $fondo-celeste;
+        background-color: #afd7ce;
         img {
             height: 450px;
             width: 100%;
@@ -32,21 +32,21 @@ main {
     }
     h1 {
         font-size: 30px;
-        color: $texto-morado;
+        color: #a686af;
         padding: 50px 50px 0px;
         text-align: center;
     }
     h2 {
         font-style: italic;
         font-size: 15;
-        color: $texto-rosado;
+        color: #edadd0;
         text-align: center;
         padding: 0px 100px 25px;
         text-align: center;
     }
     h3 {
         font-size: 30px;
-        color: $texto-morado;
+        color: #a686af;
         font-weight: bold;
         text-align: center;
         padding: 25px;
@@ -58,13 +58,6 @@ main {
         padding: 12px;
         border-radius: 30px;
         order: 2
-    }
-    p {
-        margin: 0px 25px 25px 25px;
-        text-align: justify;
-        width: 100%;
-        height: auto;
-        padding: 25px;
     }
 }
 

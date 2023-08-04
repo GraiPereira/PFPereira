@@ -13,12 +13,14 @@
   margin-bottom: 20px;
   padding: 20px;
 }
+
 .test h4 {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   color: magenta;
 }
+
 .test p {
   font-size: 14px;
   padding: 0px 50px;
@@ -88,6 +90,6 @@
   .testimonio1 .testimonio2 .testimonio3 .testimonio4 {
     margin: auto;
   }
-}
+} 
 
 /*# sourceMappingURL=testimonios.css.map */
