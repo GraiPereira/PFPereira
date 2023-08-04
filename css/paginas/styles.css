@@ -89,7 +89,9 @@ header img {
         width: 75px;
         height: 75px;
 }
-
+.btn-info {
+    margin: 25px 25px 25px 150px;
+}
 .container-icon{
     position: relative;
 }
@@ -270,55 +272,6 @@ header img {
     object-fit: cover;
     margin: auto;
     }
-
-#talleres {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 50px;
-    h4 {
-        color: purple;
-        text-align: center;
-        font-size: 18px;
-        margin-top: 15px;
-        font-weight: bold;
-    }
-    p {
-        font-size: 16px;
-        text-align: left;
-        padding: 10px;
-        margin: 10px;
-    }
-}
-.talleres {
-    width: 250px;
-    height: auto;
-    margin: 10px;
-    padding: 12px;
-    border-radius: 90px 35px 90px 35px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
-    -webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
-    -moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.53);
-    
-}
-.taller1 {
-    background-color: #E8FFB7;
-}
-.taller2 {
-    background-color: #FFC1CF;
-}
-.carousel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    width: 250px;
-    height: 350px;
-    margin: 10px;
-    border-radius: 90px 35px 90px 35px;
-}
 footer {
     grid-area: footer;
     background-color: #afd7ce;
@@ -338,31 +291,27 @@ footer p {
     }
 
 @media (max-width: 576px)
-{
-}
-@media (max-width: 576px)
 { 
 #encabezadoTalleres{
         height: 20vh;
         width: 100%;
         padding: 50;
 }
-#talleres {
+body {
+    display: flex;
     flex-wrap: wrap;
 }
-.carousel {
-    width: 380px;
-    height: 400px;
-    padding: 25;
-    margin: 0;
+header {
+    height: auto;
+    width: 100%;
 }
-.talleres {
-    width: auto;
+header img {
+    width: 11vh;
+    height: 10vh;
 }
-.taller1 {
-    margin: auto;
-}
-.taller2 {
-    margin: 50px auto;
+.container-fluid {
+    display: flex;
+    height: auto;
+    justify-content: center;
 }
 }
