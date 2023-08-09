@@ -2,5 +2,5 @@ const env = document.querySelector("#env");
 env.addEventListener("click", mostrarAlerta);
 
 function mostrarAlerta() {
-    alert("Tu formulario ha sido enviado con éxito");
+    swal("¡Excelente!", "¡tu formulado ha sido enviado con éxito!", "success");
 }
