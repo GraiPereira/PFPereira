@@ -22,6 +22,7 @@ const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
@@ -122,3 +123,10 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+function vaciarCarrito() {
+    allProducts = [];
+    showHTML();
+}
+const botonVaciar = document.querySelector('#boton-vaciar');
+
+botonVaciar.addEventListener('click', vaciarCarrito);
